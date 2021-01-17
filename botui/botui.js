@@ -23,7 +23,7 @@
     var botui = new BotUI("fogforest");
     botui.message.bot({
         delay: 200,
-        content: "嗨！阿~"
+        content: "嗨，阿~"
     }).then(function() {
         return botui.message.bot({
             delay: 1000,
@@ -112,12 +112,17 @@
         }).then(function(res) {
             return botui.message.bot({
                 delay: 1500,
-                content: "本来想要zimai.com的，但20万真买不起。。"
+                content: "嗯……本来想要zimai.com的，但20万真买不起……"
             })
         }).then(function(res) {
             return botui.message.bot({
                 delay: 1500,
-                content: "目前网站还在建设当中，如果你喜欢我的网站，那么是我的荣幸！"
+                content: "当然你现在看到的是我偷偷给你的IP地址，域名captainmai.com我觉得还没准备好去开放……"
+            })
+        }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "目前网站还在建设当中，如果你喜欢我的网站，是我的荣幸！"
             })
         }).then(function(res) {
             return botui.message.bot({
