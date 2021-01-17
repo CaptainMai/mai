@@ -23,7 +23,7 @@
     var botui = new BotUI("fogforest");
     botui.message.bot({
         delay: 200,
-        content: "嗨，阿~"
+        content: "嗨！阿~"
     }).then(function() {
         return botui.message.bot({
             delay: 1000,
