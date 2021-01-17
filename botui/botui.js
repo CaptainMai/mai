@@ -23,16 +23,16 @@
     var botui = new BotUI("fogforest");
     botui.message.bot({
         delay: 200,
-        content: "我？"
+        content: "嗨，阿~"
     }).then(function() {
         return botui.message.bot({
             delay: 1000,
-            content: "嗨，阿~我是张子迈，你也可以叫我麦子"
+            content: "我是张子迈，你也可以叫我麦子！"
         })
     }).then(function() {
         return botui.message.bot({
             delay: 1000,
-            content: "一个大帅比"
+            content: "一个大帅比！"
         })
     }).then(function() {
         return botui.action.button({
@@ -61,16 +61,16 @@
     var other = function() {
         botui.message.bot({
             delay: 1500,
-            content: "2020.6刚毕业"
+            content: "2020年6月刚毕业，是个没有从事本专业的机器视觉打工人。"
         }).then(function() {
             return botui.message.bot({
                 delay: 1500,
-                content: "是个没有从事本专业的机器视觉打工人，业余就搞搞游戏，搞搞学习，也喜欢出去搞搞！"
+                content: "业余就搞搞游戏，搞搞学习，也喜欢出去搞搞！"
             })
         }).then(function() {
             return botui.message.bot({
                 delay: 1500,
-                content: "也是因为电气工程已经太饱和了嘛"
+                content: "也是因为电气工程已经太饱和了嘛~"
             })
         }).then(function() {
             return botui.message.bot({
@@ -80,7 +80,7 @@
         }).then(function() {
             return botui.message.bot({
                 delay: 1500,
-                content: "喜欢折腾，热爱折腾，目前正在花样作死的人生路上探索中"
+                content: "喜欢折腾，热爱折腾，目前正在花样作死的人生路上探索中！"
             })
         }).then(function() {
             return botui.action.button({
@@ -93,9 +93,15 @@
         }).then(function(res) {
             return botui.message.bot({
                 delay: 1500,
-                content: "一次起昵称时想到麦田里的守望者，于是我就觉得自己叫麦子也不错，和子迈刚好反过来！这个昵称目前已经有七年了，深入人心！嗯！"
+                content: "一次起昵称时想到麦田里的守望者，于是我就觉得自己叫麦子也不错，和子迈刚好反过来！"
             })
-        }).then(function() {
+         }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "这个昵称目前已经有七个年头了，深入人心！"
+            })
+        })
+            .then(function() {
             return botui.action.button({
                 delay: 1500,
                 action: [{
