@@ -38,11 +38,11 @@
         return botui.action.button({
             delay: 1500,
             action: [{
-                text: "然后呢？",
+                text: "我喜欢你！然后呢？",
                 value: "and"
             },
             {
-                text: "闭嘴！ ",
+                text: "就这？闭嘴好吗 ",
                 value: "gg"
             }]
         })
@@ -53,7 +53,7 @@
         if (res.value == "gg") {
             return botui.message.bot({
                 delay: 1500,
-                content: "好，我走！"
+                content: "再见，祝你幸福！"
             })
         }
     });
