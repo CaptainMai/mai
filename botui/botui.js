@@ -64,10 +64,73 @@
             return botui.action.button({
                 delay: 1500,
                 action: [{
-                    text: "为什么叫 麦子 呢？ ",
+                    text: "对不起，对不起，我不懂规矩！",
                     value: "next"   
             }]
+        }).then(function() {
+            return botui.message.bot({
+                delay: 1500,
+                content: "别一上来就这么凶嘛"
+            })
+        }).then(function() {
+            return botui.message.bot({
+                delay: 1500,
+                content: "你说完这话，我们都不开心。"
+            })
+        }).then(function() {
+            return botui.message.bot({
+                delay: 1500,
+                content: "害得我连聊天的欲望都没有了"
+            })
+        }).then(function() {
+            return botui.action.button({
+                delay: 1500,
+                action: [{
+                    text: "别这么小心眼好吗？",
+                    value: "next"
+                }]
+            })
+        }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "我小心眼吗？"
+            })
+         }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "你先骂的我又说我小心眼！"
+            })
+        })
+            .then(function() {
+            return botui.action.button({
+                delay: 1500,
+                action: [{
+                    text: "你就当忘了这些，回到过去介绍你自己好吗",
+                    value: "next"
+                }]
+            })
+        }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "有些事情回不去了，发生过就无法弥补了，除非你是奇异博士……"
+            })
+        }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "当然这段话，我目前就是测试我的逻辑有没有写出bug"
+            })
+        }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "我就是个无情的bot！"
+            })
+        }).then(function(res) {
+            return botui.message.bot({
+                delay: 1500,
+                content: "那么，用你的时间宝石回到过去吧？ ^_^"
+            })
         });
+    }
     var other = function(res) {
         botui.message.bot({
             delay: 1500,
