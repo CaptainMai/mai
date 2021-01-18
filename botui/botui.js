@@ -129,9 +129,9 @@
                 delay: 1500,
                 content: "那么，用你的时间宝石回到过去吧？ ^_^"
             })
-        });
-    }
-    var other = function(res) {
+        }
+    });
+    var other = function() {
         botui.message.bot({
             delay: 1500,
             content: "2020年6月刚毕业，是个没有从事本专业的机器视觉打工人。"
