@@ -38,7 +38,7 @@
         return botui.action.button({
             delay: 1500,
             action: [{
-                text: "我喜欢你！然后呢？",
+                text: "你好！然后呢？",
                 value: "and"
             },
             {
@@ -53,12 +53,22 @@
         if (res.value == "gg") {
             return botui.message.bot({
                 delay: 1500,
-                content: "再见，祝你幸福！"
+                content: "What the……！"
             })
-        }
-    });
-     
-    var other = function() {
+        }).then(function() {
+            return botui.message.bot({
+                delay: 1500,
+                content: "给你机会再说一次！"
+            })
+        }).then(function() {
+            return botui.action.button({
+                delay: 1500,
+                action: [{
+                    text: "为什么叫 麦子 呢？ ",
+                    value: "next"   
+            }]
+        });
+    var other = function(res) {
         botui.message.bot({
             delay: 1500,
             content: "2020年6月刚毕业，是个没有从事本专业的机器视觉打工人。"
